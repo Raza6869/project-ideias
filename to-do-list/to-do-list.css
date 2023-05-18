@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+
+html {
+    margin: 0 auto;
+}
+
+
+body{
+    margin: 0 auto;
+    background: #fdf0d5;
+    align-items: center;
+}
+
+/*header*/
+
+header {
+    background: #283149;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+}
+
+header img {
+    height: 250px;
+    margin: -70px 0;
+    
+}
+
+.welcome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftside {
+    margin: 80px 0;
+}
+
+.welcome .rightside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+    margin-left: 10px;
+    margin-right: 80px;
+    background: #00ff91;
+    border-radius: 10px;
+}
+
+.DoWK-title {
+    display: flex;
+    gap: 10px;
+
+    font-size: 80pt;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    margin-bottom: -80px;
+}
+
+.DoWK-title .Do {
+    color: #FFFFFF;
+    animation: Do 1s ease;
+}
+
+.DoWK-title .WK {
+    color: #00d0ff;
+    animation: WK 1s ease;
+}
+
+@keyframes Do {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes WK {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+    
+
+
+.rightside h3{
+    color: #22577a;
+    font-size: 30PT;
+    letter-spacing: 0.10em;
+    margin-bottom: -150px;
+    font-weight: 800;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.rightside h2{
+    font-weight: 100;
+    color: #00d0ff;
+    margin: auto -30px;
+    animation: Show 1s ease;
+}
+
+.rightside h4 {
+    color: #FFFFFF;
+    background: #22577a;
+    padding: 20px;
+    border-radius: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 18pt;
+    margin-top: -30px;
+
+    animation: Show 1.2s ease
+    ;
+}
+
+.welcome img{
+    height: 400px;
+    animation: Show .6s ease;
+}
+
+@keyframes Show {
+    
+    0%{
+        opacity: 0;
+        transform: translateY(200px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+}
+
+/*Planning*/
+
+.Guide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 80px;
+    margin-top: 100px;
+    background: #00ff91;
+    border-radius: 0 500px 0 0;
+    color: #FFFFFf;
+}
+
+.guide-container {
+    display: flex;
+    align-items: center;
+}
+
+.Guide button {
+    margin-top: 120px;
+    padding: 30px;
+    font-size: 30px;
+    font-family: "Satisfy";
+    background: none;
+    border: solid 3px #22577a;
+    color: #22577a;
+    border-radius: 25px;
+    box-shadow: 10px 10px 1px #283149;
+    transition: .6s ease;
+}
+
+.Guide button:hover {
+    transform: scale(1.1);
+    background-color: #283149;
+    color: #FFFFFF;
+    border: solid 3px #FFFFFf;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+
+.rightside-guide img{
+    height: 580px;
+}
+
+.guide-title {
+    background: none;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.guide-description {
+    background-color: #22577a;
+    padding: 5px 20px 20px 20px;
+    margin-top: 40px;
+    border-radius: 20px;
+}
+
+.guide-title h1 {
+    font-size: 38pt;
+    font-weight: 900;
+    letter-spacing: 0.25em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #22577a;
+    margin-top: -20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.guide-title h3 {
+    font-size: 100px;
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #22577a;
+    margin-top: -50px;
+    margin-bottom: -20px;
+    margin-left: 18px;
+    margin-right: 20px;
+}
+
+
+.leftside-guide h2 {
+    font-size: 35pt;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    
+    color: #00ff91;
+}
+
+.leftside-guide p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 23px;
+    margin-top: -25px;
+    text-align: justify;
+}
+
+/*attachment*/
+
+.attachment-name {
+    margin-right: 80px;
+    margin-top: -10px;
+}
+
+.attachment-container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding: 80px 0 80px 0;
+
+    background: #22577a;
+}
+
+.attachment-container h3 {
+    color: #fdf0d5;
+    font-size: 25pt;
+    font-family: "lobster";
+    letter-spacing: 0.06em;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.attachment-submit {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.attachment-submit button{
+    height: 45px;
+    width: 460px;
+    text-align: center;
+    background: #57cc99;
+    box-shadow: 10px 10px 1px #283149;
+    border-radius: 5px;
+    color: #fdf0d5;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 800;
+    font-size: 13pt;
+    transition: .3s linear;
+}
+
+.attachment-submit button:hover {
+    background-color: #00ff91;
+    border: solid 3px #fdf0d5;
+    cursor: pointer;
+}
+
+.title input {
+    width: 450px;
+    height: 40px;
+    border: solid 2px #fdf0d5;
+    border-radius: 3px;
+    box-shadow: 10px 10px 1px #283149;
+    background: #fdf0d5;
+    margin-top: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+    font-size: 17pt;
+    font-family: "Satisfy";
+}
+
+
+.weekday ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin-left: -38px;
+}
+
+.weekday {
+    margin-top: -10px;
+    margin-right: 40px;
+}
+
+.weekday li {
+    margin-right: 10px;
+}
+
+.weekday li:nth-child(4){
+    margin-right: 10px;
+}
+
+.weekday button {
+    height: 50px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 7px;
+
+    background: #fdf0d5;
+    box-shadow: 10px 10px 1px #283149;
+    border: none;
+    border-radius: 3px;
+
+    font-family: "Satisfy";
+    font-size: 18pt;
+    font-weight: 500;
+    color: #22577a;
+    transition: .2s linear;
+}
+
+.weekday button:hover {
+    transform: scale(1.05);
+    background-color: #283149;
+    color: #FFFFFF;
+    border: solid 3px #FFFFFf;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+
+

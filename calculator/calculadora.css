@@ -1,0 +1,95 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+
+body{
+    margin: 0 auto;
+    background: #242423;
+    color: #E8EDDF;
+}
+
+.bg h1 {
+    font-family: "unica one";
+    letter-spacing: 0.30rem;
+    font-size: 70pt;
+    align-items: center;
+    font-weight: 600;
+
+    color: #F5CB5C;
+}
+
+.bg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+}
+
+.footer h3{
+    margin-top: 40px;
+    font-family: "unica one";
+    font-weight: 300;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.calculator {
+    background: #333533;
+    padding: 30px;
+    height: 400px;
+    width: 300px;
+    margin-top: -20px;
+    border-radius: 5%;
+    border-style: groove;
+}
+
+#result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #E8EDDF;
+    height: 50px;
+    
+    text-align: end;
+    color: #333533;
+    font-size: 25pt;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+button{
+    background: #CFDBD5;
+    height: 60px;
+    width: 75px;
+    font-size: 25px;
+    margin-left: -3px;
+    cursor: pointer;
+    color: #333533;
+    border-radius: 5%;
+    transition: .4s;
+}
+
+button:hover{
+    background-color: #cfdbd579;
+}
+#getResult{
+    background: #F5CB5C;
+    height: 125px;
+}
+
+#getResult:hover{
+    background: #ff9500;
+}
+
+#zero {
+    width: 150px;
+}
+
+
+

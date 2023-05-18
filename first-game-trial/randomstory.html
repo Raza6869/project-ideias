@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estilos/randomstory.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Random Story Game</title>
+</head>
+<body>
+<section class="story-game">
+
+    <div class="content">
+        
+        <div class="about">
+            <h1>Random Story Teller</h1>
+            <h3>Made by Rafael Thumaza, Antonio Ananias and João Inácio</h3>
+
+            <p>Welcome to my initial project of a visual-novel game type. This game have focus
+                on generate random stories with some description about your character. Its 
+                on development, and this is the first trial. <br>
+                <br>
+                I want to implement more content, like RPG atributtes and choices to do who will
+                change the future of the game. On the most, it will be short stories to play in 
+                40 minutes for each.
+            </p>
+
+            <p>If you see some bug or have a idea to implement, please report me.</p>
+            <button>Report</button>
+
+            <h2 id="havefun">Enjoy yourself!<h2>
+
+        </div>
+
+        <div class="conTainer">
+
+            <div class="player-box">
+              <h3>Please, fill all the requests.</h3>
+              <div class="requests">
+                
+                <div class="requests-box">
+                    
+                    <div class="name-character">
+                        <p>Name of your character</p>
+                        <input type="text" id="name-character" aria-label="name-character">
+                    </div>
+    
+                    <div class="age">
+                        <p>Age</p>
+                        <input type="number" id="Age" aria-label="age">
+                    </div>
+                    
+                    <button type="submit">Generate</button>
+                    </div>
+
+                    <div class="character-image">
+                        <div class="character-image-box">
+                            <img src="/Imagens/Characters-models/Galego.jpeg" alt="Character-image1">
+                        </div>
+
+                        <button class="arrow-left control" aria-label="Previous image">◄</button>
+                        <button class="arrow-right control" aria-label="Next image">►</button>
+                    </div>
+                    
+              </div>
+
+            </div>
+
+            <div class="result">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script src="/scripts/randomStory.js"></script>
+</body>
+</html>

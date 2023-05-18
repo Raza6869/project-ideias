@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+
+
+
+
+body{
+    margin: 0 auto;
+    height: auto;
+    max-width: max-content;
+    background: linear-gradient(45deg, #0E1116 10%, #373F47);
+    color: #FFFFFF;
+}
+
+i{
+    color: #FFFFFF;
+    font-size: 30pt;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background-image: url(/Imagens/Image-background-RandomStory-about.jpg);
+    background-position-y: -350px;
+}
+
+.about h1 {
+    font-size: 70pt;
+    font-weight: 900;
+    font-family: "Manrope";
+    text-shadow: 1px 1px 40px #616283;
+    margin-bottom: -30px;
+}
+
+.about h3 {
+    font-family: "Inter";
+    font-weight: 300;
+}
+
+.about p {
+    text-align: justify;
+
+    font-family: "Inter";
+    font-size: 18pt;
+
+    margin: 40px 15% 20px 15%;
+}
+
+.about button {
+    width: 200px;
+    border-radius: 10px;
+    background: none;
+    border: solid 3px #FFFFFF;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    
+    text-align: center;
+    color: #FFFFFF;
+    font-family: "Inter";
+    font-size: 20pt;
+    font-weight: 900;
+
+    transition: .4s ease;
+}
+
+.about button:hover {
+    background: #FFFFFF;
+    box-shadow: 1px 1px 30px #616283;
+    color: #0E1116;
+}
+
+#havefun {
+    font-size: 40pt;
+    font-family: "Inter";
+    font-weight: 300;
+}
+
+/*Player*/
+
+.player-box {
+    visibility: hidden;
+    margin-top: 50px;
+    margin-bottom: 150px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.player-box h3 {
+    font-size: 50pt;
+    font-family: "Unica one";
+}
+
+.requests {
+    display: flex;
+    column-gap: 180px;
+    font-size: 18pt;
+    font-family: "inter";
+    align-items: inline;
+    
+}
+
+.requests input{
+    height: 50px;
+    width: 500px;
+    background: none;
+    border: solid 3px #FFFFFF;
+    color: #FFFFFF;
+    font-size: 15pt;
+    padding-left: 10px;
+}
+
+.requests-box button{
+    width: 200px;
+    padding: 10px;
+    margin-top: 50px;
+    background: none;
+    border: solid 3px #FFFF;
+    border-radius: 5px;
+    
+    position: relative;
+    right: -150px;
+
+    font-size: 20pt;
+    font-weight: 700;
+    font-family: "Inter";
+    color: #FFFFFF;
+
+    transition: .4s ease;
+}
+
+.requests-box button:hover{
+    background: #FFFFFF;
+    box-shadow: 1px 1px 30px #616283;
+    color: #0E1116;
+}
+
+.character-image-box{
+    border: solid 3px #FFFFFF;
+    border-radius: 5px;
+    height: 280px;
+    max-width: 280px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin-top: 20px;
+}
+
+.character-image button {
+    width: 100px;
+    border-radius: 3px;
+    border: solid 3px #FFFFFF;
+    border-radius: 5px;
+    background: none;
+    color: #FFFFFF;
+
+    margin-top: 15px;
+    transition: .4s ease;
+
+    font-size: 18pt;
+    padding: 10px;
+}
+
+.character-image button:hover {
+    background: #FFFFFF;
+    color: #0E1116;
+    box-shadow: 1px 1px 30px #616283;
+}
+
+.arrow-left {
+    margin-right: 80px;
+}
+
+.character-image{
+    margin-left: -60px;
+}
+
