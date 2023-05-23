@@ -4,16 +4,65 @@
 
 body{
     margin: 0 auto;
+    align-items: center;
+    background-image: url(/images/board-wallpaper.jpg);
 }
 
 header {
     background: #283149;
     margin: 0 auto;
-    width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center ;
+    justify-content: space-between;
+    padding: 0 30px;
 }
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: #FFFFFF;
+    font-size: 30px;
+    align-items: center;
+}
+
+.addbutton label {
+    border: solid 3px #FFFFFF;
+    border-radius: 50%;
+    padding: 5px 15px;
+    display: block; 
+    cursor: pointer;
+   
+}
+
+.addbutton label::after {
+    content: '+';
+    transition: .5s ease;
+}
+
+.addbutton input:checked ~ label::after {
+    content: 'X';
+    color:#283149;
+    background: #FFFFFF;
+}
+
+.addbutton input{
+    display: none;
+}
+
+.addbutton > .attachment {
+    transition: 0.5s;
+    max-height: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.addbutton input:checked ~ .attachment {
+    max-height: 100vh;
+}
+
+
 
 header img {
     height: 180px;
@@ -22,6 +71,7 @@ header img {
 }
 
 /*attachment*/
+
 
 .attachment-name {
     margin-right: 80px;
@@ -35,7 +85,8 @@ header img {
     justify-content: center;
     padding: 10px 0 40px 0;
 
-    background: #22577a;
+    background: #ff4f6387;
+    margin-bottom: 40px;
 }
 
 .attachment-container h3 {
@@ -141,5 +192,62 @@ header img {
     cursor: pointer;
 }
 
+
+/*Board*/
+
+.board {
+    height: auto;
+    margin-top: -25px;
+    padding: 30px;
+
+    color: #283149;
+
+}
+
+.first-line, .second-line {
+    display: flex;
+    gap: 30px;
+}
+
+.board-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 30px;
+    row-gap: 80px;
+    margin: 40px auto;
+}
+
+.weekday-box {
+    background: #fdf0d5;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 10px 10px 1px #000;
+}
+
+.weekday-box .boxtitle {
+    background: #57cc99;
+    margin-top: -25px;
+    height: 60px;
+    padding: 10px 0;
+
+    color: #FFFFFF;
+    font-size: 24pt;
+    letter-spacing: 0.15em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weekday-box .boxcontent {
+    padding: 10px 30px;
+    font-size: 15pt;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    text-align: justify;
+}
 
 
