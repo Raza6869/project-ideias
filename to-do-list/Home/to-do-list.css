@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
@@ -23,6 +24,7 @@ header {
     align-items: center;
     justify-content: center ;
     position: fixed;
+    z-index: 1;
 }
 
 header img {
@@ -68,36 +70,11 @@ header img {
 
 .DoWK-title .Do {
     color: #FFFFFF;
-    animation: Do 1s ease;
 }
 
 .DoWK-title .WK {
     color: #00d0ff;
-    animation: WK 1s ease;
 }
-
-@keyframes Do {
-    0% {
-        opacity: 0;
-        transform: translateX(-100px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes WK {
-    0% {
-        opacity: 0;
-        transform: translateX(100px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-    
 
 
 .rightside h3{
@@ -126,28 +103,12 @@ header img {
     font-size: 18pt;
     margin-top: -30px;
 
-    animation: Show 1.2s ease
-    ;
 }
 
 .welcome img{
     height: 400px;
-    animation: Show .6s ease;
 }
 
-@keyframes Show {
-    
-    0%{
-        opacity: 0;
-        transform: translateY(200px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    
-}
 
 /*Planning*/
 
