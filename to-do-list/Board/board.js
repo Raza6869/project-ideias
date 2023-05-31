@@ -1,23 +1,29 @@
 const addButton = document.querySelector('input#addinput');
 const addLabel = document.querySelector('label#addlabel');
 const att = document.querySelector('section.attachment');
-let toogle = 1;
+let toogleadd = 1;
 
 addLabel.addEventListener('click', () =>{
-    toogle++;
+    toogleadd++;
 
-    if(toogle > 1){
-        toogle = 0;
+    if(toogleadd > 1){
+        toogleadd = 0;
     }
 
-    if(toogle == 1){
+    if(toogleadd == 1){
         att.classList.add('hide');
-    }else if(toogle == 0){
+    }else if(toogleadd == 0){
         att.classList.remove('hide')
     }
 });
 
-
+//Weekday of Attachment Box
+const weekDay = document.querySelectorAll('#weekday');
+const weekLabel = document.querySelectorAll('.weekday label')
+//Weekday of Board box
+const weekBox = document.querySelectorAll('#weekday-box');
+//days
+let sunatt = document.querySelector('#weekday #sunday')
 
 
 

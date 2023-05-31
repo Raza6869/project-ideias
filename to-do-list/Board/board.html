@@ -12,7 +12,7 @@
     <header>
         <div class="nav">
             
-            <a href="/to-do-list.html"> <img src="/images/Logo-ToDW.png" alt="Logo da ToDW"> </a>
+            <a href="/to-do-list/Home/to-do-list.html"> <img src="/to-do-list/images/Logo-ToDW.png" alt="Logo da ToDW"> </a>
 
             <div class="addbutton">
                 <input type="checkbox" aria-label="add" id="addinput">
@@ -47,16 +47,12 @@
 
                 <h3>Choose the weekday</h3>
                 <ul>
-                    <li><button name="weekday" id="weekday1 sunday" aria-label="weekday"> <p>Sunday</p></li>
-                    <li><button name="weekday" id="weekday2 monday" aria-label="weekday"> <p>Monday</p></li>
-                    <li><button name="weekday" id="weekday3 tuesday" aria-label="weekday"> <p>Tuesday</p></li>
-                    <li><button name="weekday" id="weekday4 wednesday" aria-label="weekday"> <p>Wednesday</p></li>
-                </ul>
-                
-                <ul>
-                    <li><button name="weekday" id="weekday5 thursday" aria-label="weekday"> <p>Thursday</p></li>
-                    <li><button name="weekday" id="weekday6 friday" aria-label="weekday"> <p>Friday</p></li>
-                    <li><button name="weekday" id="weekday7 saturday" aria-label="weekday"> <p>Saturday</p></li>
+                    <li><input type="checkbox" id="weekday monday" aria-label="weekday"><label for="weekday monday">Monday</label></li>
+                    <li><input type="checkbox" id="weekday tuesday" aria-label="weekday"> <label for="weekday tuesday">Tuesday</label></li>
+                    <li><input type="checkbox" id="weekday wednesday" aria-label="weekday"> <label for="weekday wednesday">Wednesday</label></li>
+                    <li><input type="checkbox" id="weekday thursday" aria-label="weekday"><label for="weekday thursday">Thursday</label></li>
+                    <li><input type="checkbox" id="weekday friday" aria-label="weekday"> <label for="weekday friday">Friday</label></li>
+                    <li><input type="checkbox" id="weekday saturday" aria-label="weekday"> <label for="weekday saturday">Saturday</label></li>
                 </ul>
             </div>
 
@@ -68,9 +64,7 @@
 
         <div class="board-container">
            
-            <div class="first-line">
-
-                <div class="weekday-box" id="boxsunday">
+                <div class="weekday-box hide" id="weekday-box sunday">
 
                     <div class="boxtitle">
                         
@@ -78,15 +72,15 @@
                     
                     </div>
                     
-                    <div class="boxcontent">
+                    <div class="boxcontent hide">
 
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, sed excepturi. Doloribus asperiores voluptatibus officia aliquam aspernatur autem corrupti quod fugit nobis soluta dolorem illum, harum cupiditate. Sunt, ut pariatur.</p>
+                    
 
                     </div>
 
                 </div>
 
-                <div class="weekday-box" id="boxmonday">
+                <div class="weekday-box hide" id="weekday-box monday">
 
                     <div class="boxtitle">
                         
@@ -94,15 +88,15 @@
                     
                     </div>
                     
-                    <div class="boxcontent">
+                    <div class="boxcontent hide">
 
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, sed excepturi. Doloribus asperiores voluptatibus officia aliquam aspernatur autem corrupti quod fugit nobis soluta dolorem illum, harum cupiditate. Sunt, ut pariatur.</p>
+                            
 
                     </div>
 
                 </div>
 
-                <div class="weekday-box" id="boxtuesday">
+                <div class="weekday-box hide" id="weekday-box tuesday">
 
                     <div class="boxtitle">
                         
@@ -112,13 +106,13 @@
                     
                     <div class="boxcontent">
 
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, sed excepturi. Doloribus asperiores voluptatibus officia aliquam aspernatur autem corrupti quod fugit nobis soluta dolorem illum, harum cupiditate. Sunt, ut pariatur.</p>
+                        
 
                     </div>
 
                 </div>
 
-                <div class="weekday-box" id="boxwednesday">
+                <div class="weekday-box hide" id="weekday-box wednesday">
 
                     <div class="boxtitle">
                         
@@ -128,17 +122,14 @@
                     
                     <div class="boxcontent">
 
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, sed excepturi. Doloribus asperiores voluptatibus officia aliquam aspernatur autem corrupti quod fugit nobis soluta dolorem illum, harum cupiditate. Sunt, ut pariatur.</p>
+                        
 
                     </div>
                     
                 </div>
 
-            </div>
 
-            <div class="second-line">
-
-                <div class="weekday-box" id="boxthursday">
+                <div class="weekday-box hide" id="weekday-box thursday">
 
                     <div class="boxtitle">
                         
@@ -148,13 +139,13 @@
                     
                     <div class="boxcontent">
 
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, sed excepturi. Doloribus asperiores voluptatibus officia aliquam aspernatur autem corrupti quod fugit nobis soluta dolorem illum, harum cupiditate. Sunt, ut pariatur.</p>
+                        
 
                     </div>
 
                 </div>
 
-                <div class="weekday-box" id="boxfriday">
+                <div class="weekday-box hide" id="weekday-box friday">
 
                     <div class="boxtitle">
                         
@@ -164,13 +155,13 @@
                     
                     <div class="boxcontent">
 
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, sed excepturi. Doloribus asperiores voluptatibus officia aliquam aspernatur autem corrupti quod fugit nobis soluta dolorem illum, harum cupiditate. Sunt, ut pariatur.</p>
+                        
 
                     </div>
 
                 </div>
 
-                <div class="weekday-box" id="boxsaturday">
+                <div class="weekday-box hide" id="weekday-box saturday">
 
                     <div class="boxtitle">
                         
@@ -180,15 +171,14 @@
                     
                     <div class="boxcontent">
 
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, sed excepturi. Doloribus asperiores voluptatibus officia aliquam aspernatur autem corrupti quod fugit nobis soluta dolorem illum, harum cupiditate. Sunt, ut pariatur.</p>
+                        
 
                     </div>
 
                 </div>
 
-            </div>
-                
         </div>
+                
 
     </section>
     
