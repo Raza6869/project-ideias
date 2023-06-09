@@ -87,13 +87,18 @@ body {
 
 .password i {
     position: absolute;
-    top: 323px;
+    top: 365px;
     font-size: 25px;
-    left: 480px;
+    left: 555px;
     color: #000000;
     mix-blend-mode: overlay;
     cursor: pointer;
 }
+#showpass {
+    display: none;
+}
+
+
 
 .adjunts {
     display: flex;
@@ -193,6 +198,7 @@ body {
 .bg img {
     position: absolute;
     height: 950px;
+    width: 106%;
     mix-blend-mode: screen;
     z-index: -1;
     top: 10px;

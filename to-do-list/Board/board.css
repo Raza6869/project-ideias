@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+
+html{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body{
+    margin: 0 auto;
+}
+
+.board {
+    display: flex;
+
+}
+
+/*Menu*/
+
+.menu{
+    display: flex column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 20%;
+    height: 800px;
+    position: fixed;
+    border-radius: 0px 22px 0px 0px;
+    color: #FFFFFF;
+    font-family: "Raleway";
+    font-size: 22px;
+    font-weight: 300;
+    background: linear-gradient(to right, #007629, #8AD301);
+}
+
+.exit p:hover {
+    text-shadow: 1px 1px 1px #FFFFFF;
+}
+
+.menu li:hover {
+    text-shadow: 1px 1px 1px #FFFFFF;
+}
+
+.perfil {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.perfil img {
+    height: 150px;
+    margin-bottom: -30px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.navbar ul{
+    list-style: none;
+    text-align: center;
+    margin-left: -40px;
+    margin-bottom: 200px;
+}
+
+.navbar li {
+    cursor: pointer;
+}
+
+.navbar li:not(:nth-child(0)) {
+    margin-bottom: 30px;
+}
+
+.exit p {
+    cursor: pointer;
+}
+
+/*daily task box*/
+
+.dailytask-box {
+    display: flex column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 280px;
+}
+
+.time h1 {
+    font-family: "Unica One";
+    font-size: 130px;
+    font-weight: 300;
+    position: absolute;
+    top: 20px;
+    left: 450px;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 8px #000000;
+}
+
+.time span {
+    font-size: 70px;
+}
+
+.time img {
+    height: 350px;
+}
+
+.tasks h1 {
+    color: #8AD301; 
+    font-family: "Raleway";
+    font-size: 50px;
+    text-align: start;
+    margin-left: 60px;
+}
+
+.dailytask-box button {
+    background: linear-gradient(to right, #007629, #8AD301);
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: none;
+    color: #FFFFFF;
+    font-size: 60px;
+
+    position: absolute;
+    top: 310px;
+    right: 50px;
+}
+
