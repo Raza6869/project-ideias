@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+body {
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    text-align: center;
+    background: linear-gradient(0deg, #FFFFFF , #46bc7f22);
+}
+
+/*Header*/
+
+header {
+    height: 40vh;
+    width: 100%;
+    background-image: url(/images/cadastro\ bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header img {
+    height: 260px;
+    filter: brightness(100);
+    
+}
+
+/*Cadastro*/
+
+.cadastro-container{
+    font-family: "Raleway";
+    font-size: 20px;
+    display: flex column;
+    justify-content: center;
+     
+}
+
+.cadastro-container h1 {
+    font-family: "Raleway";
+    font-size: 50px;
+    color: #007629; 
+}
+
+.name p {
+    margin: 0 0 20px 3px;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    text-align: start;
+    column-gap: 10px;
+}
+
+.cadastro-container input {
+    height: 40px;
+    width: 620px;
+    padding-left: 10px;
+    border: solid 1px #007629;
+    border-radius: 5px;
+    font-family: "Raleway";
+}
+
+.name input {
+    height: 40px;
+    width: 300px;
+    border: solid 1px #007629;
+    border-radius: 5px;
+}
+
+.importants p {
+    text-align: start;
+    margin-left: 360px;
+}
+
+.cadastro-container img{
+    height: 300px;
+    border-radius: 50%;
+    background: linear-gradient(30deg, #88ff82, #007629);
+}
+
+button{
+    height: 70px;
+    width: 300px;
+    border-radius: 20px;
+    background: #019b37;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: "Raleway";
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    margin-top: 50px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+button:hover {
+    background: #09b101;
+}
+
+/*Footer*/
+
+footer{
+    width: 100%;
+    height: 400px;
+    background: #303230;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #FFFFFF;
+    font-family: "Raleway";
+    text-align: start;
+}
+
+footer img {
+    height: 400px;
+    filter: brightness(100);
+    margin-bottom: -30px;
+}
+
+
+footer ul {
+    list-style: none;
+    text-align: left;
+    margin-left: -40px;
+    margin-bottom: 50px;
+}
+
+footer li {
+    margin-bottom: 5px;
+}
+
+footer i{
+    font-size: 50px;
+    margin: 0px 5px;
+}
+
+footer .showcontacts{
+    margin-left: -12px;
+}
+
+
