@@ -15,31 +15,34 @@
     </header>
     <section class="cadastro-container">
         <h1>Realize seu cadastro!</h1>
-        <div class="name">
-            <div class="first-name">
-                <p>Primeiro nome</p>
-                <input type="text" id="firstname">
+        <form id="form">
+            
+            <div class="name input">
+                <p>Nome</p>
+                <input type="text" id="name " class="required" oninput="nameValidate()"> <br>
+                <span class="spans-required">Deve haver 3 ou mais caracteres</span>
             </div>
-            <div class="second-name">
-                <p>Sobrenome</p>
-                <input type="text" id="secondname">
+
+            <div class="email input">
+                <p>Email</p>
+                <input type="email" name="email de acesso" id="acessmail " class="required" oninput="emailValidate()"> <br>
+                <span class="spans-required">Endereço de email invalido</span>
+            </div>
+
+            <div class="senha input">
+                <p>Senha</p>
+                <input type="password" id="password " class="required" oninput="passwordValidate()"> <br>
+                <span class="spans-required">Deve haver 8 ou mais caracteres</span>
+            </div>
+
+            <div class="confirmsenha input">
+                <p>Confirmar Senha</p>
+                <input type="password" id="passwordconfirm " class="required" oninput="comparePassword()"> <br>
+                <span class="spans-required">Senhas devem ser compativeis</span>
             </div>
         </div>
-        <div class="importants">    
-            <p>Email</p>
-            <input type="email" name="email de acesso" id="acessmail">
-            <p>Nome de Usuário</p>
-            <input type="text" id="username">
-            <p>Senha</p>
-            <input type="password" id="password">
-            <p>Confirmar senha</p>
-            <input type="password" id="passwordconfirm">
-            <div class="Avatar">    
-                <p>Escolha seu Avatar!</p>
-                <img src="/images/perfil image.png" alt="Avatar" id="avatar">
-            </div>
-        </div>
-        <button class="submit">Cadastre-se</button>
+        <button type="submit">Cadastre-se</button>
+    </form>
     </section>
 
     <footer>

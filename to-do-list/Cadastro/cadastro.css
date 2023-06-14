@@ -37,6 +37,7 @@ header img {
     font-size: 20px;
     display: flex column;
     justify-content: center;
+    padding: 0 30%;
      
 }
 
@@ -46,37 +47,38 @@ header img {
     color: #007629; 
 }
 
-.name p {
-    margin: 0 0 20px 3px;
-}
-
-.name {
-    display: flex;
-    justify-content: center;
-    text-align: start;
-    column-gap: 10px;
-}
-
 .cadastro-container input {
     height: 40px;
-    width: 620px;
+    width: 100%;
     padding-left: 10px;
     border: solid 1px #007629;
     border-radius: 5px;
     font-family: "Raleway";
 }
 
-.name input {
+form {
+    text-align: start;
+}
+
+input {
     height: 40px;
     width: 300px;
     border: solid 1px #007629;
     border-radius: 5px;
 }
 
-.importants p {
-    text-align: start;
-    margin-left: 360px;
+input:focus{
+    outline: 0;
 }
+
+
+
+.spans-required {
+    display: none;
+    font-size: 12pt;
+    color: red;
+}
+
 
 .cadastro-container img{
     height: 300px;
@@ -97,7 +99,8 @@ button{
     margin-top: 50px;
     border: none;
     cursor: pointer;
-    margin-bottom: 40px;
+    margin-bottom: 100px;
+    margin-left: 30%;
 }
 
 button:hover {
@@ -134,15 +137,24 @@ footer ul {
 
 footer li {
     margin-bottom: 5px;
+    cursor: pointer;
 }
 
 footer i{
     font-size: 50px;
     margin: 0px 5px;
+    cursor: pointer;
 }
 
 footer .showcontacts{
     margin-left: -12px;
 }
 
+footer li:hover {
+    text-shadow: 1px 1px 1px #FFFFFF;
+}
+
+footer i:hover {
+    text-shadow: 1px 1px 1px #FFFFFF;
+}
 
